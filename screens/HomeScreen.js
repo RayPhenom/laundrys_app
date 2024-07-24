@@ -6,15 +6,13 @@ import {
   Alert,
   Pressable,
   Image,
-  TextInput
+  TextInput,
 } from "react-native";
 import React, { useEffect, useState } from "react";
-import { Feather } from '@expo/vector-icons';
+import { Feather } from "@expo/vector-icons";
 import * as Location from "expo-location";
 import { MaterialIcons } from "@expo/vector-icons";
 //import Carousel from "../components/Carousel";
-
-
 
 const HomeScreen = () => {
   const [displayCurrentAddress, setdisplayCurrentAddress] = useState(
@@ -66,6 +64,7 @@ const HomeScreen = () => {
   };
   return (
     <SafeAreaView>
+      {/* Location  and profile*/}
       <View style={{ flexDirection: "row", alignItems: "center", padding: 10 }}>
         <MaterialIcons name="location-on" size={35} color="#fd5c63" />
         <View>
@@ -98,7 +97,6 @@ const HomeScreen = () => {
         <Feather name="search" size={24} color="#fd5c63" />
       </View>
       {/* Carousel */}
-
     </SafeAreaView>
   );
 };

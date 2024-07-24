@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.18",
+    "deprecated-react-native-prop-types": "^5.0.0",
     "expo": "~51.0.22",
     "expo-location": "~17.0.1",
     "expo-status-bar": "~1.12.1",
