@@ -48,14 +48,14 @@ const HomeScreen = () => {
       return;
     }
     const { coords } = await Location.getCurrentPositionAsync();
-    console.log(coords);
+    //console.log(coords);
     if (coords) {
       const { latitude, longitude } = coords;
       let response = await Location.reverseGeocodeAsync({
         latitude,
         longitude,
       });
-      console.log(response);
+      //console.log(response);
       for (let item of response) {
         let address = ` ${item.city}, ${item.country}, ${item.region}`;
         setdisplayCurrentAddress(address);
