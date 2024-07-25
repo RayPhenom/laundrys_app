@@ -3,6 +3,7 @@ import React from 'react'
 import { SliderBox } from "react-native-image-slider-box";
 
 
+
 const Carousel = () => {
     const images = [
          "./assets/washing.jpg",
